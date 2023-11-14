@@ -5,6 +5,7 @@
     --color--dimgrey: #939caa;
     --color--lightgrey: #e5ecf4;
     --color--snow: #f2f5f9;
+    --color--white: #fff;
 }
 
 .color {
@@ -30,5 +31,9 @@
 
     &--snow {
         color: var(--color--snow);
+    }
+
+    &--white {
+        color: var(--color--white);
     }
 }
