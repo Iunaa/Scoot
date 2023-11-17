@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media (min-width: $mdBreakpoint) {
+    justify-content: space-around;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  &__hamburger {
+    padding-right: 98.3px;
+    cursor: pointer;
+
+    @media (min-width: $mdBreakpoint) {
+      display: none;
+    }
+  }
+}

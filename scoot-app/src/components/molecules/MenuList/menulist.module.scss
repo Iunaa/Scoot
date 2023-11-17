@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  &__list {
+    display: none;
+
+    @media (min-width: $mdBreakpoint) {
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 32px;
+      align-items: baseline;
+    }
+  }
+
+  &__element {
+    color: $dimgrey;
+  }
+
+  &__button {
+    display: none;
+    @media (min-width: $mdBreakpoint) {
+      display: block;
+      margin-left: 94px;
+    }
+  }
+}

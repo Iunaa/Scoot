@@ -1,0 +1,39 @@
+
+    $yellow: #fcb72b;
+    $lightyellow: #fff4df;
+    $darknavy: #495567;
+    $dimgrey: #939caa;
+    $lightgrey: #e5ecf4;
+    $snow: #f2f5f9;
+    $white: #fff;
+
+
+@mixin color() {
+    &--yellow {
+        color: $yellow;
+    }
+
+    &--lightyellow {
+        color: $lightyellow;
+    }
+
+    &--darknavy {
+        color: $darknavy;
+    }
+
+    &--dimgrey {
+        color: $dimgrey;
+    }
+
+    &--lightgrey {
+        color: $lightgrey;
+    }
+
+    &--snow {
+        color: $snow;
+    }
+
+    &--white {
+        color: $white;
+    }
+}
