@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  align-items: center;
   &__list {
     display: none;
 
@@ -12,15 +13,36 @@
     }
   }
 
+  &__logo {
+    width: 75.5px;
+
+    @media (min-width: $mdBreakpoint) {
+      width: 167.8px;
+      padding-right: 58.8px;
+    }
+  }
+
+  &__logoList {
+    display: flex;
+    align-items: center;
+  }
+
   &__element {
     color: $dimgrey;
+    @include typography();
+  }
+
+  &__btnLink {
+    color: $white;
+    background-color: $yellow;
+    padding: 14px 39px;
+    @include typography();
   }
 
   &__button {
     display: none;
     @media (min-width: $mdBreakpoint) {
       display: block;
-      margin-left: 94px;
     }
   }
 }

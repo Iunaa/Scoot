@@ -1,11 +1,13 @@
-import Header from "./Components/organisms/Header/Header";
-// import './components/_base/index.scss';
+import Header from "./components/organisms/Header/Header";
+import Hero from "./components/organisms/Hero/Hero";
+
 function App() {
-    return (
-        <>
-            <Header />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 }
 
 export default App;

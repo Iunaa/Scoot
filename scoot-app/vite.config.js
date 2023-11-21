@@ -8,7 +8,10 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData:  `@import "./src/components/_base/index";` 
+        additionalData:  `
+        @import "./src/components/_base/index.scss";
+        @import "./src/components/_base/_typography.scss";
+        ` 
         
       }
     }

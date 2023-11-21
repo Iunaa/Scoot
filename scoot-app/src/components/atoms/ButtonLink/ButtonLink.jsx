@@ -1,11 +1,12 @@
 import Styles from "./buttonlink.module.scss";
 
-export const ButtonLink = () => {
+export default function ButtonLink(props) {
+  const ButtonClass = `${Styles.link__anchor} ${props.className} ${
+    Styles[`button__Link--${props.typography}`]
+  } ${Styles[`button__Link--${props.position}`]}`;
   return (
-    <div className={Styles.container}>
-      <a className={`${Styles.container__buttonLink} typography--button`}>
-        Get Scootin
-      </a>
-    </div>
+    <a className={ButtonClass} href="/button">
+      {props.label}
+    </a>
   );
-};
+}
