@@ -1,8 +1,8 @@
-import Styles from "./sectiontext.module.scss";
+import styles from "./sectiontext.module.scss";
 
 export default function SectionText(props) {
-  const TextClass = `${Styles.sectionText}  ${props.className} ${
-    Styles[`sectionText--${props.typography}`]
+  const TextClass = `${styles.sectionText}  ${props.className} ${
+    styles[`sectionText--${props.typography}`]
   } `;
 
   return <span className={TextClass}>{props.text}</span>;

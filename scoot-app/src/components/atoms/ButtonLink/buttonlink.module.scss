@@ -1,11 +1,8 @@
-.container {
-  &__buttonLink {
+.buttonLink {
     color: $white;
     background-color: $yellow;
     padding: 14px 39px;
     @include typography();
   }
-  &--position{
-    
-  }
-}
+ 
+

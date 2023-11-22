@@ -1,11 +1,11 @@
-import Styles from "./buttonlink.module.scss";
+import styles from "./buttonlink.module.scss";
 
 export default function ButtonLink(props) {
-  const ButtonClass = `${Styles.link__anchor} ${props.className} ${
-    Styles[`button__Link--${props.typography}`]
+  const ButtonClass = `${styles.buttonLink} ${props.className} ${
+    styles[`buttonLink--${props.typography}`]
   } `;
   return (
-    <a className={ButtonClass} href="/button">
+    <a className={ButtonClass} href="#">
       {props.label}
     </a>
   );

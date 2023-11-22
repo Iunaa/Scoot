@@ -1,8 +1,8 @@
-import Styles from "./itemlist.module.scss";
+import styles from "./itemlist.module.scss";
 
 export default function ItemList(props) {
-  const ItemClass = `${Styles.itemList}  ${props.className} ${
-    Styles[`itemList--${props.typography}`]
+  const ItemClass = `${styles.itemList}  ${props.className} ${
+    styles[`itemList--${props.typography}`]
   } `;
 
   return <li className={ItemClass}>{props.label}</li>;
