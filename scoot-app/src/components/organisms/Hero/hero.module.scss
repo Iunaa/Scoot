@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  background-image: url("../../../assets/img/Home/Bitmap.png");
+  background-image: url("../../../assets/img/Home/Bitmap.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   width: 100%;
@@ -10,6 +10,11 @@
 
   @media (min-width: $mdBreakpoint) {
     background-size: 120%;
+    background-image: url("../../../assets/img/Home/BitmapTablet.jpg");
+  }
+
+  @media (min-width: $xlBreakpoint) {
+    background-image: url("../../../assets/img/Home/BitmapDesk.jpg");
   }
 
   &__alltext {
@@ -24,14 +29,7 @@
     @media (min-width: $xlBreakpoint) {
       display: flex;
       align-items: flex-start;
-    }
-  }
-
-  &__allcomponts {
-    // text-align: left;
-
-    @media (min-width: $xlBreakpoint) {
-      padding-top: 23px;
+      padding-left: 50px;
     }
   }
 
@@ -74,6 +72,17 @@
     padding: 14px 39px;
   }
 
+  &__textBnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
   &__arrow {
     position: fixed;
     right: 220px;
@@ -88,12 +97,26 @@
     display: none;
     @media (min-width: $mdBreakpoint) {
       display: block;
-      position: fixed;
+      position: absolute;
       top: 470px;
     }
 
     @media (min-width: $xlBreakpoint) {
-      left: 720px;
+      display: none;
+    }
+  }
+
+  &__arrowDesk {
+    display: none;
+    @media (min-width: $mdBreakpoint) {
+      display: none;
+    }
+    @media (min-width: $xlBreakpoint) {
+      display: block;
+      position: absolute;
+      max-width: 447px;
+      left: 750px;
+      top: 290px;
     }
   }
 
@@ -106,7 +129,8 @@
       top: 530px;
     }
     @media (min-width: $xlBreakpoint) {
-      left: 60px;
+      left: 1237px;
+      top: 370px;
     }
   }
 
@@ -117,8 +141,8 @@
     }
     @media (min-width: $xlBreakpoint) {
       display: block;
-      position: fixed;
-      bottom: 351px;
+      position: absolute;
+      bottom: 331px;
     }
   }
 }
