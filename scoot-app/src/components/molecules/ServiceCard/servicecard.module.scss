@@ -6,7 +6,8 @@
   padding-top: 50px;
   padding-left: 17px;
   padding-right: 17px;
-  
+  padding-bottom: 104px;
+
   @media (min-width: $xlBreakpoint) {
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -22,16 +23,24 @@
   }
 
   &__allcomponents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media (min-width: $xlBreakpoint) {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
     }
   }
 
   &__img {
     max-width: 290px;
+
+    @media (min-width: $xlBreakpoint) {
+      max-width: 732px;
+    }
   }
 
   &__title {
@@ -41,6 +50,11 @@
 
     @media (min-width: $mdBreakpoint) {
       max-width: 475px;
+    }
+
+    @media (min-width: $xlBreakpoint) {
+      max-width: 445px;
+      text-align: justify;
     }
   }
 
@@ -53,6 +67,11 @@
 
     @media (min-width: $mdBreakpoint) {
       max-width: 573px;
+    }
+
+    @media (min-width: $xlBreakpoint) {
+      text-align: justify;
+      max-width: 445px;
     }
   }
 }

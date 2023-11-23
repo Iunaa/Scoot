@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $darknavy;
+  @include typography();
+
+  @media (min-width: $xlBreakpoint) {
+    flex-direction: row;
+    padding-bottom: 102px;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  &__title {
+    padding-top: 88px;
+    color: $white;
+
+    @media (min-width: $mdBreakpoint) {
+      max-width: 457px;
+    }
+
+    @media (min-width: $xlBreakpoint) {
+      max-width: 415px;
+      text-align: justify;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 62px;
+
+    @media (min-width: $mdBreakpoint) {
+      gap: 15px;
+    }
+
+    @media (min-width: $xlBreakpoint) {
+     
+      margin-top: 60px;
+    }
+  }
+}

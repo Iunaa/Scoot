@@ -2,6 +2,7 @@ import { Sprites } from "./components/ions/Sprites/Sprites";
 import Header from "./components/organisms/Header/Header";
 import Hero from "./components/organisms/Hero/Hero";
 import ServiceSection from "./components/organisms/ServicesSections/ServiceSection";
+import SignUp from "./components/organisms/SignUp/SignUp";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Hero />
       <ServiceSection/>
+      <SignUp/>
     </>
   );
 }
