@@ -1,0 +1,61 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 59px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  @media (min-width: $xlBreakpoint) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $mdBreakpoint) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    @media (min-width: $xlBreakpoint) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__svg {
+    max-width: 56px;
+    @media (min-width: $mdBreakpoint) {
+      max-width: 96px;
+    }
+  }
+
+  &__title {
+    color: $darknavy;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include typography();
+  }
+
+  &__paragraph {
+    color: $dimgrey;
+    padding-bottom: 24px;
+    @include typography();
+
+    @media (min-width: $mdBreakpoint) {
+      max-width: 398px;
+      text-align: justify;
+    }
+  }
+
+  &__alltext {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $mdBreakpoint) {
+    }
+  }
+}

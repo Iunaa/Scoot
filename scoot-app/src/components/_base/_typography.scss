@@ -42,7 +42,16 @@
     }
   }
 
-  &--title{
+  &--h4 {
+    font-family: "Space Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.893px;
+  }
+
+  &--title {
     font-family: "Space Mono";
     font-size: 32px;
     font-style: normal;
@@ -50,7 +59,7 @@
     line-height: 32px;
     letter-spacing: -1.429px;
 
-    @media (min-width: $mdBreakpoint){
+    @media (min-width: $mdBreakpoint) {
       font-size: 48px;
       line-height: 48px;
       letter-spacing: -2.143px;
