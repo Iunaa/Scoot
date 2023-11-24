@@ -1,36 +1,11 @@
 .container {
   display: flex;
   align-items: center;
-  &__list {
-    display: none;
+ 
 
-    @media (min-width: $mdBreakpoint) {
-      display: flex;
-      max-width: 1000px;
-      margin: 0 auto;
-      gap: 32px;
-      align-items: baseline;
-    }
-  }
 
-  &__logo {
-    width: 75.5px;
 
-    @media (min-width: $mdBreakpoint) {
-      width: 167.8px;
-      padding-right: 58.8px;
-    }
-  }
-
-  &__logoList {
-    display: flex;
-    align-items: center;
-  }
-
-  &__element {
-    color: $dimgrey;
-    @include typography();
-  }
+ 
 
   &__btnLink {
     color: $white;
@@ -45,4 +20,9 @@
       display: block;
     }
   }
+ 
+  &__listFooter{
+    display: block;
+  }
+
 }

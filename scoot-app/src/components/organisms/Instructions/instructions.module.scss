@@ -24,6 +24,7 @@
     @media (min-width: $xlBreakpoint) {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
   }
 
@@ -38,6 +39,7 @@
     color: $darknavy;
     padding-top: 24px;
     padding-bottom: 24px;
+    cursor: pointer;
     @include typography();
   }
 
@@ -48,6 +50,10 @@
 
     @media (min-width: $mdBreakpoint) {
       max-width: 398px;
+      text-align: justify;
+    }
+
+    @media (min-width: $xlBreakpoint) {
       text-align: justify;
     }
   }
