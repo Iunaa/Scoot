@@ -20,10 +20,11 @@
 
   &__logo {
     width: 75.5px;
+    
     @media (min-width: $mdBreakpoint) {
       width: 107px;
     }
-    max-width: 107px;
+   
   }
 
   &__list {
