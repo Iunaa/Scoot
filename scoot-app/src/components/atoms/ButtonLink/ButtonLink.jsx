@@ -1,6 +1,6 @@
 import styles from "./buttonlink.module.scss";
 
-export default function ButtonLink(props) {
+ export default function ButtonLink (props) {
   const ButtonClass = `${styles.buttonLink} ${props.className} ${
     styles[`buttonLink--${props.typography}`]
   } `;
@@ -10,3 +10,5 @@ export default function ButtonLink(props) {
     </a>
   );
 }
+
+

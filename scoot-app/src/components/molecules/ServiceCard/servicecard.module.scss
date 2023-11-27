@@ -55,6 +55,8 @@
     @media (min-width: $xlBreakpoint) {
       max-width: 445px;
       text-align: justify;
+      justify-content: center;
+      text-align: left;
     }
   }
 

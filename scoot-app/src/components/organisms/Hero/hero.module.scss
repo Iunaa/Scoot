@@ -30,6 +30,7 @@
       display: flex;
       align-items: flex-start;
       padding-left: 50px;
+      max-width: 1810px;
     }
   }
 
@@ -43,9 +44,9 @@
     }
 
     @media (min-width: $xlBreakpoint) {
-      padding-left: 165px;
+      padding-left: 75px;
       max-width: 650px;
-      text-align: justify;
+      text-align: left;
     }
   }
 
@@ -60,9 +61,9 @@
     }
 
     @media (min-width: $xlBreakpoint) {
-      padding-left: 260px;
-      max-width: 663px;
-      text-align: justify;
+      padding-left: 170px;
+      max-width: 593px;
+      text-align: left;
     }
   }
 
@@ -115,7 +116,7 @@
       display: block;
       position: absolute;
       max-width: 447px;
-      left: 750px;
+      left: 650px;
       top: 290px;
     }
   }
@@ -129,7 +130,7 @@
       top: 530px;
     }
     @media (min-width: $xlBreakpoint) {
-      left: 1237px;
+      left: 1219px;
       top: 370px;
     }
   }

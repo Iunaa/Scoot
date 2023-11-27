@@ -1,7 +1,23 @@
-.container {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #333a44;
   padding-top: 44px;
+
+  @media (min-width: $xlBreakpoint) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-top: 30px;
+    max-width: 1440px;
+  }
+
+  &__logo {
+    padding-bottom: 42px;
+  }
+
+  &__logolist {
+    display: flex;
+  }
 }

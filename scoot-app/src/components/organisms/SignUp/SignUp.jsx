@@ -12,8 +12,8 @@ export default function SignUp() {
           typography={"title"}
         />
         <picture className={styles.container__picture}>
-          <img src={appStore} />
-          <img src={googlePlay} />
+          <img className={styles.container__appStore} src={appStore} />
+          <img className={styles.container__googlePlay} src={googlePlay} />
         </picture>
       </div>
     );

@@ -1,12 +1,11 @@
 .container {
   display: flex;
-  align-items: center;
+  // align-items: center;
  
-
-
-
- 
-
+  &__allcomponents{
+    display: flex;
+    justify-content: space-between;
+  }
   &__btnLink {
     color: $white;
     background-color: $yellow;

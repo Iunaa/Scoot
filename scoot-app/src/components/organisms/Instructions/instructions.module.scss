@@ -8,8 +8,9 @@
 
   @media (min-width: $xlBreakpoint) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
+    padding-left: 70px;
   }
 
   &__container {
@@ -41,6 +42,12 @@
     padding-bottom: 24px;
     cursor: pointer;
     @include typography();
+
+    @media (min-width: $xlBreakpoint) {
+     
+      max-width: 650px;
+      text-align: left;
+    }
   }
 
   &__paragraph {
@@ -54,6 +61,7 @@
     }
 
     @media (min-width: $xlBreakpoint) {
+      max-width: 350px;
       text-align: justify;
     }
   }

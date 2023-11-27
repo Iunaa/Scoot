@@ -1,20 +1,14 @@
 import styles from "./textlist.module.scss";
 import ItemList from "../../atoms/ItemList/ItemList";
 
-export default function TextList() {
+export default function TextList(props) {
+  const ListClass = `${styles.container__list}  ${props.className} ${
+    props.header ? styles["container__list--header"] : ""
+  }`;
   return (
-    <nav className={styles.container}>
-      <div className={styles.container__logolist}>
-        <svg
-          className={styles.cards__logo}
-          width="56"
-          height="56"
-          viewBox="0 0 56 56"
-          fill="#"
-        >
-          <use href="#logo" xlinkHref="#logo" />
-        </svg>
-
+    <nav className={ListClass}>
+      <div className={styles.container}>
+        
         <ul className={styles.container__list}>
           <ItemList
             className={`${styles.container__element}`}

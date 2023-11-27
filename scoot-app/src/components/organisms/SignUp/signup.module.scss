@@ -23,6 +23,7 @@
     @media (min-width: $xlBreakpoint) {
       max-width: 415px;
       text-align: justify;
+      text-align: left;
     }
   }
 
@@ -38,8 +39,15 @@
     }
 
     @media (min-width: $xlBreakpoint) {
-     
       margin-top: 60px;
+      padding-left: 97px;
+
+      img {
+        width: 157px;
+      }
+      
     }
+
+  
   }
 }
